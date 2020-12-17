@@ -1,5 +1,5 @@
 {
-  "name": "epubjs-temp-tix",
+  "name": "epubjs-forked",
   "version": "0.3.89",
   "description": "Parse and Render Epubs",
   "main": "lib/index.js",
@@ -24,7 +24,7 @@
     "watch": "babel --watch -d lib/ src/",
     "prepare": "npm run compile && npm run build && npm run minify && npm run legacy && npm run productionLegacy"
   },
-  "author": "fchasen@gmail.com",
+  "author": "alikazemkhanloo@gmail.com",
   "license": "BSD-2-Clause",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
