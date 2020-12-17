@@ -1002,7 +1002,9 @@ class Rendition {
 	 */
 	handleLinks(contents) {
 		if (contents) {
-			contents.on(EVENTS.CONTENTS.LINK_CLICKED, (href) => {
+			contents.on(EVENTS.CONTENTS.LINK_CLICKED, (href, link) => {
+				var popup = link.getAttribute('epub:type') === "noteref";
+				if(popup) return ;
 				let relative = this.book.path.relative(href);
 				this.display(relative);
 			});

@@ -106,11 +106,11 @@ export function replaceLinks(contents, fn) {
 			link.onclick = function(){
 
 				if(linkUrl && linkUrl.hash) {
-					fn(linkUrl.Path.path + linkUrl.hash);
+					fn(linkUrl.Path.path + linkUrl.hash, link);
 				} else if(linkUrl){
-					fn(linkUrl.Path.path);
+					fn(linkUrl.Path.path, link);
 				} else {
-					fn(href);
+					fn(href, link);
 				}
 
 				return false;

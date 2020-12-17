@@ -1,11 +1,11 @@
 {
   "name": "epubjs-forked",
-  "version": "0.3.89",
+  "version": "0.3.90",
   "description": "Parse and Render Epubs",
   "main": "lib/index.js",
   "module": "src/index.js",
   "types": "types/index.d.ts",
-  "repository": "https://github.com/futurepress/epub.js",
+  "repository": "https://github.com/alikazemkhanloo/epub.js",
   "directories": {
     "test": "test"
   },
